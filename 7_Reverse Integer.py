@@ -1,3 +1,5 @@
+#7_Reverse Integer
+
 #Using String Inverted Order Method
 #Low effient but simple
 class Solution:
