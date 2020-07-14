@@ -4,7 +4,8 @@
 #Time complexity: O(m+n)  Space complexity: O(min(m,n))
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        counts1, counts2 = collections.Counter(nums1), collections.Counter(nums2)
+        counts1, counts2 = collections.Counter(
+            nums1), collections.Counter(nums2)
         res = counts1 & counts2
         return res.elements()
 
@@ -14,7 +15,7 @@ class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         if len(nums1) > len(nums2):
             return self.intersect(nums2, nums1)
-        
+
         res, counts = [], {}
         for i in nums1:
             if i in counts:
