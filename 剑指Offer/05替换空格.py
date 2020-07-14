@@ -27,4 +27,3 @@ class Solution:
             else:
                 result = ''.join([result, c])
         return result
-
