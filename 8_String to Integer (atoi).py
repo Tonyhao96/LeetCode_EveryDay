@@ -21,3 +21,4 @@ class Solution:
             flag = False
         result = s * sign
         return min(max(result, -2**31), 2**31 - 1)
+        
