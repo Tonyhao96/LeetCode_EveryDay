@@ -12,11 +12,12 @@ class Solution:
     def hasCycle(self, head: ListNode) -> bool:
         cache = set()
         while head:
-            if head in cache: return True
+            if head in cache:
+                return True
             cache.add(head)
             head = head.next
         return False
-        
+
 #Using Fast and Slow Pointer
 #Time complexity: O(n+k)  Space complexity: O(1)
 class Solution:
@@ -25,5 +26,6 @@ class Solution:
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-            if slow is fast: return True
+            if slow is fast:
+                return True
         return False
