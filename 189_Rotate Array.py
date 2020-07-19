@@ -1,7 +1,7 @@
 #189_Rotate Array
 
-#Using Hash
-#Time complexity: O(n)  Space complexity: O(n)
+#Rotate k times
+#Time complexity: O(n*k)  Space complexity: O(1)
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
         """
@@ -11,3 +11,4 @@ class Solution:
             temp = nums[-1]
             nums[1::] = nums[:-1]
             nums[0] = temp
+
